@@ -137,7 +137,7 @@ body .gif {
     -ms-transform: rotateY(10deg); /* IE 9 */
     -webkit-transform: rotateY(10deg); /* Safari */
     transform: rotateY(10deg);
-    z-index: 1000;
+    z-index: 100;
     -webkit-transition: ease 1s; /* For Safari 3.1 to 6.0 */
     transition: ease 1s;
 }
