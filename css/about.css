@@ -1,0 +1,130 @@
+/* test env class */
+a {
+  text-decoration:none;
+  color:dimgray; 
+}
+
+
+#popup {
+	position: absolute;
+	margin-top: 1%;
+	margin-left: 2%;
+	color: lightgray;
+	width: 10%;
+	font-family: 'Avenir', sans-serif;
+	cursor: pointer;
+}
+
+/* Classes for popup */
+.popup-window {
+  background-color: rgba(202,202,202,0.9);
+  display: -ms-grid;
+  display: grid;
+  grid-template:
+    '. . .' 10%
+    '. window .' 1fr
+    '. . .' 10% / 30% 1fr 30%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+}
+
+.popup-page {
+  background-color: white;
+  color: dimgray;
+  border-radius: 6px;
+  grid-area: window;
+  padding: 5%;
+  height: 40%;
+  margin-top: 20%;
+  font-family: 'Avenir', sans-serif;
+  font-size:1vw;
+  line-height: 1.5;
+
+}
+
+
+#close {
+	font-size: 14px;
+	color: lightgray;
+	cursor: pointer;
+}
+
+#close:hover{
+	color: grey;
+}
+/* Class that hides popup */
+
+.out {
+  opacity: 0;
+  display: none;
+}
+
+/* Keyframes for popup animation */
+@-webkit-keyframes pop-up {
+  from {
+    opacity: 0;
+    display: none;
+  }
+  to {
+    opacity: 1;
+    display: block;
+  }
+}
+@keyframes pop-up {
+  from {
+    opacity: 0;
+    display: none;
+  }
+  to {
+    opacity: 1;
+    display: block;
+  }
+}
+
+@-webkit-keyframes away {
+  from {
+    opacity: 1;
+    display: block;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes away {
+  from {
+    opacity: 1;
+    display: block;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+/* Classes for popup */
+.pop-up {
+  -webkit-animation-name: pop-up;
+          animation-name: pop-up;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.away {
+  -webkit-animation-name: away;
+          animation-name: away;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}

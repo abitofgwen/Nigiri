@@ -1,0 +1,227 @@
+html, body {
+  margin:0;
+  height:95%;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 500px;
+}
+body .gif {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+}
+
+.container {
+  margin-top: 1.8%;
+  height: 100%;
+  width: 100%;
+}
+
+/*sushi sign*/
+
+.card-container {
+  cursor: pointer;
+  height: 100px;
+  -webkit-perspective: 600;
+          perspective: 600;
+  position: relative;
+  width: 180px;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 500;
+  margin-left: 5.5%;
+  margin-top: 5%;
+  position: absolute;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.card .side {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background: white;
+  color: #A0C7C8;
+  text-align: center;
+  line-height: 105px;
+  border-radius: 2px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+
+}
+.card .back {
+  background: white;
+  font-size: 15px;
+  line-height: 1.5;
+  color: black;
+  text-align: center;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/*sushi icon*/
+.left {
+  float:left;
+  padding-left: 5%;
+  padding-top: 0;
+  column-count: 2;
+  column-gap: 2vw;
+  margin-top: 20.5vh;
+
+}
+.sushi {
+  width:60px;
+  height: 30px;
+  cursor: pointer;
+  margin:20px 10px;
+  padding-top:30px;
+  z-index: 100;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+.sushi:hover{
+	transform: scale(1.2);
+}
+
+#col2 {
+  padding-top: 4px;
+}
+
+
+/*sushi display stand*/
+.right {
+  margin-right: 30px;
+  float: right;
+  background: center no-repeat;
+  width: 78%;
+  height: 100%;
+  display:inline;
+  position: relative;
+  margin-top: 5.5%;
+}
+
+.backgroundText {
+  font-size: 3.7vw;
+  color: #000000;
+  line-height: 75px;
+  z-index: -10;
+  font-family: 'M PLUS 1p', sans-serif;
+
+}
+
+.square {
+  background: url(../image/Group.png) no-repeat;
+  background-size: contain;
+  width: 640px;
+  height: 320px;
+  margin-top: 310px;
+  margin-left: 20vw;
+  display: inline-block;
+  position: absolute;
+  z-index: 100;
+}
+
+.square:hover {
+	-ms-transform: rotateY(10deg); /* IE 9 */
+    -webkit-transform: rotateY(10deg); /* Safari */
+    transform: rotateY(10deg);
+	-webkit-transition: ease 1s; /* For Safari 3.1 to 6.0 */
+	transition: ease 1s;
+}
+
+
+/*sushi drag & drop*/
+#toro, #toro1 {
+  background-image: url(../image/Toro.png);
+  background-position: right;
+
+}
+#katsuo, #katsuo1{
+  background-image: url(../image/katsuo.png);
+  background-position: right;
+
+}
+#salmonbelly, #salmonbelly1 {
+  background-image: url(../image/salmonbelly.png);
+  background-position: right;
+
+}
+#roe, #roe1 {
+  background-image: url(../image/Roe.png);
+  background-position: right;
+}
+#sake, #sake1 {
+  background-image: url(../image/sake.png);
+  background-position: right;
+}
+#kuru, #kuru1 {
+  background-image: url(../image/Kurumaebi.png);
+  background-position: right;
+}
+#uni, #uni1 {
+  background-image: url(../image/Uni.png);
+  background-position: right;
+}
+#tamago, #tamago1 {
+  background-image: url(../image/Tamago.png);
+  background-position:right;
+}
+#ika, #ika1 {
+  background-image: url(../image/Ika.png);
+  background-position:right;
+}
+#sumi-ika, #sumi-ika1 {
+  background-image: url(../image/sumi-ika.png)
+}
+#kabishira, #kabishira1 {
+  background-image: url(../image/Hashira.png);
+  background-position: right;
+}
+#sawara, #sawara1 {
+  background-image:url(../image/Sawara.png);
+  background-position: right;
+}
+#kanpachi, #kanpachi1 {
+  background-image: url(../image/Kanpachi.png);
+  background-position: right;
+}
+#aori-ika, #aori-ika1 {
+  background-image: url(../image/Aoriika.png);
+  background-position: right;
+}
+#sayori, #sayori1 {
+  background-image: url(../image/Sayori.png);
+  background-position: right;
+}
+#kinmedai, #kinmedai1 {
+  background-image: url(../image/Kinmedai.png);
+  background-position: right;
+}
+
+
+
+
+
+/*media query*/
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* STYLES GO HERE */
+
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* STYLES GO HERE */
+}
