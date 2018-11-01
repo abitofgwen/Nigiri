@@ -53,7 +53,7 @@ function dropCurrent(event) {
 
   //scale based on id
   if (newId == "kuru1") {
-    document.getElementById(newId).style.transform = "scale(4.5)";
+    document.getElementById(newId).style.transform = "scale(4.6)";
   } else if (newId == "roe1" || newId == "uni1") {
     document.getElementById(newId).style.transform = "scale(3.5)";
   } else {
