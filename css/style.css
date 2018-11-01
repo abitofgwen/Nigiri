@@ -113,7 +113,7 @@ body .gif {
 .backgroundText {
   font-size: 3.7vw;
   color: black;
-  line-height: 4.6vw;
+  line-height: 75px;
   z-index: -10;
   font-family: 'M PLUS 1p', sans-serif;
 }
