@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sushi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:500,700,800" rel="stylesheet">
+    <script  src="js/scripts.js"></script>
+  </head>
+
+  <body>
+<div class="container">
+   <div class="card-container">
+  <div class="card">
+    <div class="side">Nigiri 握り寿司</div>
+	  <div class="side back"><br>drag and drop your selected sushi to the sushi display stand</div>
+  </div>
+</div>
+
+  <div class="left">
+    <div id="col1">
+      <div class="sushi" id="sumi-ika" draggable="true" ondragstart="drag(event);"></div>
+      <div class="sushi" id="sawara" draggable="true" ondragstart="drag(event);"></div>
+      <div class="sushi" id="kabishira" draggable="true" ondragstart="drag(event);"></div>
+      <div class="sushi" id="ika" draggable="true" ondragstart="drag(event);"></div>
+      <div class="sushi" id="kanpachi" draggable="true" ondragstart="drag(event);"></div>
+      <div class="sushi" id="aori-ika" draggable="true" ondragstart="drag(event);"></div>
+      <div class="sushi" id="sayori" draggable="true" ondragstart="drag(event);"></div>
+      <div class="sushi" id="kinmedai" draggable="true" ondragstart="drag(event);"></div>
+    </div>
+    <div id="col2">
+      <div class="sushi" id="katsuo" draggable="true" ondragstart="drag(event);"></div>
+      <div class="sushi" id="toro" draggable="true" ondragstart="drag(event);"></div>
+      <div class="sushi" id="salmonbelly" draggable="true" ondragstart="drag(event);"></div>
+      <div class="sushi" id="roe" draggable="true" ondragstart="drag(event);"></div>
+      <div class="sushi" id="sake" draggable="true" ondragstart="drag(event);"></div>
+      <div class="sushi" id="kuru" draggable="true" ondragstart="drag(event);"></div>
+      <div class="sushi" id="uni" draggable="true" ondragstart="drag(event);"></div>
+      <div class="sushi" id="tamago" draggable="true" ondragstart="drag(event);"></div>
+    </div>
+  </div>
+
+  <div class="right" id="background">
+    <div class="square" ondrop="dropCurrent(event)" ondragover="allowDrop(event)"></div>
+  </div>
+  <div class="popup-window away out" id="popupwindow">
+    <div class="popup-page">
+      <div id="close">✕</div><br>
+      <h1 style="font-size:20px;color: #A0C7C8">Here Is Your Nigiri Sushi Cheat Sheet</h1><br>
+		<p>This web tool is designed for who wants to learn some fundamental knowledges of nigiri sushis in playful and interactive way. By simply drag and drop a sushi from the left side to the sushi stand, you can find out the name of that sushi in English and Japanese. To know more about nigiri sushi, I encourage you to visit <a href="https://www.thesushigeek.com">The Sushi Geek</a>.<br><i style="color:lightgray; font-style:italic">- notes from Gwen</i></p>
+	  </div>
+	</div>
+  <div id="popup">About</div>
+</div>
+
+
+  <script  src="js/about.js"></script>
+  <script  src="js/rain.js"></script>
+  </body>
+</html>
